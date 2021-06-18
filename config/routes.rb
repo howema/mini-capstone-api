@@ -16,4 +16,12 @@ Rails.application.routes.draw do
   get "/shark_path/:key" => "products#shark" #url segment parameter
 
   get "/aquarium_path" => "products#aquarium_tank" #query parameters
+
+  post "/body_params" => "products#body_params"
+
+  get "/products", controller: "products", action: "index"
+
+  get "/products/:id", controller: "products", action: "show"
+
+  post "/products", controller: "products", action: "create"
 end
