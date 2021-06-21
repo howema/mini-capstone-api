@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# product.destroy_all
+
 product = Product.create(name: "Aquarium_tank", price: 1000000, image_url: "http://sc04.alicdn.com/kf/HTB1CZTxX.T1gK0jSZFhq6yAtVXaH.jpg", description: "Really big and made of mermaid glass")
 
 product = Product.create(name: "Shark", price: 20, image_url: "https://frontiersinblog.files.wordpress.com/2020/01/frontiers-marine-science-estimating-global-catches-marine-recreational-fishes.jpg?w=1000", description: "Buy 2 sharks, get one free")
