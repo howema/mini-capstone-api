@@ -23,3 +23,5 @@ product = Product.create(name: "Leviathan", price: 500000, image_url: "https://i
 product = Product.create(name: "Stingray", price: 30, image_url: "https://images.unsplash.com/photo-1509414016757-23d57a425e06?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3RpbmdyYXl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", description: "Colorful sea pancake.")
 
 product = Product.create(name: "Colorful coral", price: 18, image_url: "https://media.fromthegrapevine.com/assets/images/2015/6/Colorful%20coral%20reef.jpg.824x0_q71_crop-scale.jpg", description: "Much more popular than our greyscale coral.")
+
+product = Product.create(name: "Narwhal", price: 78, image_url: "https://lirp.cdn-website.com/a67897e8/dms3rep/multi/opt/narwhal-960w.jpg", description: "Majestic sea unicorn")
