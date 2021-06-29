@@ -5,6 +5,9 @@ class Product < ApplicationRecord
   validates :name, uniqueness: true
   validates :price, numericality: { greater_than: 0 }
 
+  belongs_to :supplier
+  has_many :orders
+
   # def supplier
   #   Suppiler.find_by(id: supplier_id)
   # end
