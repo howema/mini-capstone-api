@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
   def create
     product = Product.find_by(id: params[:product_id])
     order = Order.new(
-      user_id: params[:user_id],
+      user_id: current_user.id,
       product_id: params[:product_id],
       quantity: params[:quantity],
       subtotal: product.price * params[:quantity].to_i,
@@ -14,12 +14,13 @@ class OrdersController < ApplicationController
   end
 
   def index
-    order = Order.all
+    orders = Order.all
     render json: order.as_json
   end
 
   def show
-    order = Order.find_by(id: params[:id])
-    render json: order.as_json
+      order = current_user.orders.find_by(id: params[:id])
+      render json: order
+    end
   end
 end
