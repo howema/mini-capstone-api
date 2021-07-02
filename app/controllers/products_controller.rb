@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :authenticate_admin, except: [:index, :show]
-  
+
   def shark
     input = params["key"]
     render json: { message: "The url segment is #{input}" }
@@ -27,7 +27,7 @@ class ProductsController < ApplicationController
       name: params["name"],
       price: params["price"],
       image_url: params["image_url"],
-      description: params["description"]
+      description: params["description"],
       supplier_id: params["supplier_id"],
     )
 
