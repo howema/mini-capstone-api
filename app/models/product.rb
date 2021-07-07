@@ -6,7 +6,6 @@ class Product < ApplicationRecord
   validates :price, numericality: { greater_than: 0 }
 
   belongs_to :supplier
-  has_many :orders
   has_many :category_products
   has_many :categories, through: :category_products
 
